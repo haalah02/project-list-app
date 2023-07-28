@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(99, 86, 82);
+    /* position: relative; */
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.all{
+    /* margin: auto; */
+    height: 100vh;
+    padding: 50px;
+    background-color: rgb(255, 221, 127);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+  }
+
+  .container { 
+    /* flex-grow:1; */
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* max-width: 600px; */
+    /* margin: 50px auto; */
+    /* margin: 0; */
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 70px;
+    padding-top: 60px;
+    border: 1px solid #ccc;
+    /* width: 90%; */
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+    width:100%;
+  }
+
+  .hide-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  .video-container {
+    /* position: relative; */
+    width:100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+    margin-right: 5px;
+    /* padding-bottom: 56.25%; */
+    /* overflow: hidden;*/
+  }
+
+  .video-container2 {
+    /* position: relative; */
+    width:100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    box-sizing: border-box;
+    margin-left: 5px;
+    /* background-color: #fff; */
+    /* padding-bottom: 56.25%; */
+    /* overflow: hidden;*/
+  }
+   
+ 
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+  } 
+
+  .video-container2 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius:10px ;
+  } 
+
+
+
+  .hOne{
+    margin-bottom:10px;
+  }
+
+  .headerTextAdd{
+    /* background-color: bisque; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* margin-right: 0px; */
+}
+
+
+input#taskInput{
+    font-size: 20px;
+    /* padding-right: 20px;
+    padding-left: 20px; */
+    /* padding: 15px 50px ; */
+    padding: 15px ;
+    border-radius: 5px;
+    /* margin-right: 5px; */
+  }
+
+  button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+  
+.createdListContainer{
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+ul#taskList{
+    padding: 0;
+  }
+  
+li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+span.task-text{
+    font-size:23px ;
+    margin-left:7px;
+  }
+  /* .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  } */
+
+ .done {
+    text-decoration: line-through;
+    text-decoration-color:grey;
+  }
+  .delete-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    /* margin-left: 50px; */
+    cursor: pointer;
+     position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .delete-icon::before,
+  .delete-icon::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 2px;
+    background-color: #fff;
+  }
+  
+  .delete-icon::before {
+    transform: rotate(45deg);
+  }
+  
+  .delete-icon::after {
+    transform: rotate(-45deg);
+  }
+  .delete-icon:hover {
+    background-color: #f4ca1f;
+}
+
+  
+   
+    @media screen and (min-width: 800px){
+      .container{
+        width: 600px;
+      }
+      .video-container {
+        width:600px;
+      }
+      .hOne{
+        font-size: 20px;
+      }
+    
+    }
+   
+
+  
+
+  @media screen and (max-width: 800px) {
+    .all{
+        padding: 20px;
+    }
+    .container{
+    width: 100%;
+    padding: 20px;
+    }
+    }
+    .headerTextAdd{
+        width: 100%;
+    }
+    .half{
+    width: 100%;
+    }
+ 
+ @media screen and (max-width: 400px) {
+    .all{
+    padding: 10px;
+    }
+    
+    .container{
+    width: 100%;
+    padding:10px;
+    }
+    input #taskInput{
+        margin-right:2px;
+        padding: 10px;
+    }
+    }
+
+  .hOne{
+    margin-bottom:0px;
+  }
+
+   @media screen and (max-width: 750px){
+    /* .half{
+        flex: 1;
+        width: 100%;
+    } */
+    .hide-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:auto;
+        box-sizing: border-box;
+      }
+
+    }
+  
+  

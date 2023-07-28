@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>To-Do List App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div class="all">
-    <div class="container">
-
+      <div class="container">
         <div class="headerTextAdd">
-            <div class="hOne">
-               <h1>To Do List</h1>
-            </div>
-            <div class="inputToDo">
-               <input type="text" id="taskInput" placeholder="Add a new task...">
-               <button onsubmit="addTask()">Add</button>
-            </div>
+          <div class="hOne">
+            <h1>To Do List</h1>
+          </div>
+          <div class="inputToDo">
+            <input type="text" id="taskInput" placeholder="Add a new task.." />
+            <button onsubmit="addTask()">Add</button>
+          </div>
         </div>
 
         <div class="createdListContainer">
-            <ul id="taskList">
-            
-            </ul>
+          <ul id="taskList"></ul>
         </div>
-    </div>  
+      </div>
+
+      <div class="hide-display">
+        <div class="half video-container">
+          <iframe
+            src="https://www.youtube.com/embed/dso1sXYDxhw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="half video-container2">
+          <iframe
+            src="https://player.vimeo.com/video/374024768?h=0ec696cbff&color=ffffff&title=0&byline=0&portrait=0&badge=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
-
- <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
