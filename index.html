@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Start cookieyes banner -->
-    <!-- <script
-      id="cookieyes"
-      type="text/javascript"
-      src="https://scriptstaging.cookieyes.com/client_data/a438da6054c1cb0fa89ba063/script.js"
-    ></script> -->
-    <!-- End cookieyes banner -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("consent", "default", {
+        ad_storage: "denied",
+
+        analytics_storage: "denied",
+
+        functionality_storage: "denied",
+
+        personalization_storage: "denied",
+
+        security_storage: "granted",
+
+        wait_for_update: 2000,
+      });
+
+      gtag("set", "ads_data_redaction", true);
+      gtag("set", "url_passthrough", true);
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <!-- <script
       async
@@ -38,11 +56,17 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://scriptstaging.cookieyes.com/client_data/a438da6054c1cb0fa89ba063/script.js"
+    ></script>
+    <!-- End cookieyes banner -->
+
     <title>To-Do List App</title>
     <link rel="stylesheet" type="text/css" href="app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-   
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -55,6 +79,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <div class="all">
       <div class="container">
         <div class="headerTextAdd">
